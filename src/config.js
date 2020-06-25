@@ -1,4 +1,4 @@
 export default {
   // API_ENDPOINT: 'http://localhost:9090'
-  API_ENDPONT: 'https://git.heroku.com/serene-savannah-00968.git'
+  API_ENDPOINT: 'https://serene-savannah-00968.herokuapp.com'
 }

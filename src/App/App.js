@@ -18,6 +18,7 @@ class App extends Component {
   };
 
   componentDidMount() {
+    console.log(config.API_ENDPOINT)
     Promise.all([
       fetch(`${config.API_ENDPOINT}/notes`),
       fetch(`${config.API_ENDPOINT}/folders`)
@@ -40,6 +41,7 @@ class App extends Component {
         console.error({ error })
       })
   }
+
 
   handleAddFolder = folder => {
     this.setState({
