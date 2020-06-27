@@ -20,6 +20,7 @@ export default class AddNote extends Component {
       folderId: e.target['note-folder-id'].value,
       modified: new Date(),
     }
+    console.log(newNote);
     fetch(`${config.API_ENDPOINT}/notes`, {
       method: 'POST',
       headers: {
@@ -38,6 +39,7 @@ export default class AddNote extends Component {
       })
       .catch(error => {
         console.error({ error })
+        console.log(error)
       })
   }
 
